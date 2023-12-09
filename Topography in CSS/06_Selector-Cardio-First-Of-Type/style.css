@@ -1,0 +1,8 @@
+p:first-of-type {
+    background-color: blue;
+}
+
+span:first-of-type {
+    font-weight: bold;
+    color: red;
+}
