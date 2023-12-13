@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, *:before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.site {
+    margin: 2em 2em;
+    font-family: Helvetica, sans-serif;
+    
+}
+
+.site-header {
+    border-bottom: 2px solid black;
+    margin-bottom: 2em;
+    padding: 1em 0;
+    position: relative;
+    
+}
+
+.site-header h1 {
+    display: inline-block;
+    padding-right: 3em;
+}
+
+.nav {
+    /* position: absolute;
+    bottom: 50%;
+    right: 0;
+    transform: translateY(50%); */
+    display: inline-block;
+}
+
+.nav li{
+    display: inline-block;
+}
+
+.nav ul { 
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: green;
+    padding: 0.5em 0.8em;
+    border: 1px solid grey;
+    background-color: bisque;
+}
+
+.content-header h2{
+    margin: 0.5em auto;
+}
+
+.content-section p {
+    line-height: 1.5;
+    padding-bottom: 20px;
+    
+}
