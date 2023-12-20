@@ -1,0 +1,34 @@
+
+.calendar .row {
+    display: flex;
+    width: 65vw;
+    height: 30vh;
+    
+}
+
+.calendar .days {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.calendar .notes {
+    border: 1px solid black;
+    text-align: center;
+    flex: 0 0 20%;
+}
+
+.calendar .title {
+    flex: 1 0 90%;
+    padding: 1em 2em;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.calendar .day {
+    flex-grow: 1;
+    padding: 1em 2em;
+    border: 1px solid black;
+    text-align: center;
+    
+}
