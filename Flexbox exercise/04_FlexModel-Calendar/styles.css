@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box
+}
+
+body {
+    margin: 2em;
+}
+
+.container .week,
+.container .notes {
+    display: flex;
+    align-items: center;
+    max-width: 65vw;
+    flex-wrap: wrap;
+    max-height: 40vh;
+    text-align: center;
+    
+}
+.notes > span{
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.notes {
+    flex-direction: column;
+    
+}
+
+.notes > span,
+.week > span {
+    border: 1px solid black;
+    padding: 2.5em;
+}
+
+.week > span:nth-child(7),
+.week > span:nth-child(1){
+    flex-basis: 80%;
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+.week > span:nth-child(8),
+.week > span:nth-child(9){
+    flex-grow: 2;
+    flex-shrink: 1;
+}
+
+.week > span:nth-child(2),
+.week > span:nth-child(3),
+.week > span:nth-child(4),
+.week > span:nth-child(5),
+.week > span:nth-child(6),
+.week > span:nth-child(7) {
+    flex-grow: 3;
+    flex-shrink: 1;
+}
