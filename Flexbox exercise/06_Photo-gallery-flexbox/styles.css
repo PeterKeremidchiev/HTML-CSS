@@ -1,0 +1,32 @@
+
+
+body {
+    display: flex;
+    background-color: #eee;
+}
+
+.gallery ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    
+   
+}
+
+.gallery li {
+    display: flex;
+    align-items: center;
+    border: 0.5em solid black;
+    background-color: white;
+    box-shadow: 
+        0 0 0.5em 0 rgba(0, 0, 0, 0.3) inset,
+        0 0 1em 0 rgba(0, 0, 0, 0.4);
+    border-radius: 0.2em;    
+    
+}
+.gallery li img {
+    display: block;
+    padding: 2em;
+} 
