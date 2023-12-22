@@ -1,0 +1,31 @@
+
+
+body {
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    /* flex-wrap: wrap; */
+    min-height: 100vh;
+    
+}
+
+.container {
+    display: flex;
+    gap: 2em;
+   
+}
+.images {
+    display: flex;
+    width: 5em;
+    flex: 0 0 auto;
+    overflow: hidden;
+    border-radius: 0.5em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.3);
+}
+
+.images:hover {
+    cursor: pointer;
+    width: 30em;
+    transition: width 0.4s ease-in-out;
+}
