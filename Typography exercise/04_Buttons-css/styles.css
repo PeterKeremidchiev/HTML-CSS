@@ -1,0 +1,30 @@
+body {
+    background-color: #CCC;
+}
+
+.button {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    border-radius: 3em;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+    font-size: 15px;
+    background-color: transparent;
+    
+}
+
+.button:last-child:hover{
+    background-color: green;
+    cursor: pointer;
+    outline: none;
+}
+
+.filled-buttons .button{
+    background-color: #444343;
+    color: white;
+}
