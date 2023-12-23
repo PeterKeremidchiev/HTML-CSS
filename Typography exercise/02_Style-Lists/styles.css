@@ -1,0 +1,24 @@
+/* TODO: style the html */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+body {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    line-height: 1.5;
+    font-size: 18px;
+    background-color: #EDEDED;
+}
+
+h2 {
+    
+    text-decoration: underline;
+    padding: 20px;
+    margin: 10 5;
+    letter-spacing: 3px;
+    background-color: #3B516B;
+    border-radius: 10px;
+    color: floralwhite;
+}
+
+li {
+    margin-left: 20px;
+}
