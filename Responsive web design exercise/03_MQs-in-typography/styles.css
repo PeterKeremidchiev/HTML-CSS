@@ -1,0 +1,154 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.5 Verdana, sans-serif;
+}
+
+@media (max-width: 500px) {
+    html {
+        font: 12px/1.5 Verdana, sans-serif;
+    }
+    
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+    html {
+        font: 14px/1.5 Verdana, sans-serif;
+    }
+    
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    html {
+        font: 16px/1.5 Verdana, sans-serif;
+    }
+    
+}
+
+@media (min-width: 800px) and (max-width: 1300px) {
+    html {
+        font: 18px/1.5 Verdana, sans-serif;
+    }
+    
+}
+
+@media (min-width: 1300px) and (max-width: 1800px) {
+    html {
+        font: 21px/1.5 Verdana, sans-serif;
+    }
+    
+}
+
+@media (min-width: 1800px) {
+    html {
+        font: 23px/1.5 Verdana, sans-serif;
+    }
+    
+}
+
+
+blockquote,
+h2, h3, h4, h5, h6 {
+    margin-bottom: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    color: rgb(0, 154, 0);
+}
+body {
+    background-color: #eee;
+    
+}
+
+p {
+    padding-bottom: 1.5em;
+}
+
+img {
+    background-color: white;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70em;
+    margin: 4em auto; 
+    gap: 4em;
+}
+
+header {
+    border-bottom: 2px solid black;
+    flex: 1 1 100%;
+    padding-bottom: 2em;
+    
+}
+
+.page > main {
+    flex: 1 0 65%;
+}
+
+.page > aside {
+    flex: 1 0 25%;
+}
+
+.page aside ul {
+    margin-left: 1em;
+}
+
+img[class*="align"] {
+    display: block;
+    padding: 0.5em;
+    background-color: white;
+    border: 6px solid black;
+    box-shadow: 0 0 1em 0.2em rgb(0, 0 , 0 , 0.2);
+
+}
+
+.par-block {
+    display: flex;
+    gap: 1em;
+    
+}
+.par-block blockquote {
+    border-left: 2px solid gainsboro;
+    color: rgb(184, 181, 181);
+    padding-left: 1em; 
+    flex:1 1 40%;
+    
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+blockquote footer {
+    float: right;
+}
+
+.par-block p {
+    flex:1 1 60%;
+}
+
+.align-right {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+.align-left {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+aside > h3 {
+    margin-top: 1em;
+}
