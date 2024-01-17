@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, header, section {
+    font-family: inherit;
+}
+
+body {
+    color: rgb(11, 11, 11);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 1.5em;
+    padding-right: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(0, 0, 0, 0.150);
+}
+
+.mylogo {
+    position: relative;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 1em;
+}
+
+.navbar a:hover {
+    color: blue;
+}
+
+.home {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    background-size: cover;
+    align-items: center;
+    background-color: rgb(0, 0 , 50);
+    padding: 3em 10%;
+    
+}
+
+.content {
+    max-width: 35vw;
+    animation: 1.5s linear 0s 1 alternate sun-rise;
+}
+
+.content h3 {
+    font-size: 2em;
+    font-weight: 700;
+    color: rgb(235, 235, 255);
+    margin-bottom: 1em;
+}
+
+.content h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin: -0.2em 0;
+    color: white;
+}
+
+span {
+    color: blue;
+}
+
+.content p {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 1.3em;
+    color: rgb(183, 183, 183);
+    text-decoration: none;
+    
+}
+
+.image-container {
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: 2s linear 0s 1 alternate slidein;
+                
+}
+
+
+
+@keyframes slidein {
+    from {
+      transform: translateX(110vw);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+@keyframes sun-rise {
+    from {
+        transform: translateY(110vw);
+      }
+      to {
+        transform: translateY(0);
+      }
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.150);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+@media (max-width: 800px) {
+    .home {
+        font-size: 0.9em;
+    }
+    .content h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1em;
+    }
+    .home {
+        justify-content: center;
+        font-size: 0.8em;
+        padding-top: 15em;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .home h1 {
+        font-size: 2em;
+    }
+    
+    .image-container {
+        width: 10em;
+        height: 10em;
+
+    }
+}
+
+@media (max-width: 400px) {
+    .home {
+        font-size: 0.65em;
+    }
+}
